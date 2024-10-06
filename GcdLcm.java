@@ -1,16 +1,14 @@
 import java.util.*;
 class GcdLcm {
     public static void main(String[] args){
-        int n1=8,n2=6;
-        int a=n1,b=n2;
-        while(b>0){
-            int t=b;
-            b= a%b;
-            a=t;
+        int n1=8,n2=6,gcd=1,lcm,i;
+        for(i=1;i<=n1 & i<=n2;i++){
+             if(n1%i==0 && n2%i==0){
+            gcd = i;
+             }
         }
-        int GCD=a;
         System.out.println("GCD is "+GCD);
-        int LCM=(n1*n2)/GCD;
+        int lcm=(n1*n2)/Ggcd;
         System.out.println("LCM is "+LCM);
     }
 
